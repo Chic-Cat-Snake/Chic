@@ -2,6 +2,11 @@ import React from 'react'
 import styles from '../styles/login.css'
 import { Link, useNavigate } from 'react-router-dom';
 
+//Look into what useNavigate does in react router
+//useNavigator seems like its making a redirection
+
+// On line 49 fix that route the to sends to the wrong location
+
 const Signup= ({ setSSID }) => {
 
     const navigator = useNavigate()

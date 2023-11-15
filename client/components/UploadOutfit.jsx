@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 // AXIOS: REQUESTS TO SERVER
 import axios from 'axios';
 
+//were going to have to add the form input for the tags here 
+//were going to have to look into the Axios what its doing here 
+
+
 const UploadOutfit = ({ SSID }) => {
   // STATE: IMAGE
   const [file, setFile] = useState(undefined);
