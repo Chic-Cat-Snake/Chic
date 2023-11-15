@@ -21,15 +21,17 @@ const AllOutfits = ({ SSID }) => {
         console.log('these are all outfits from frontend', res.rows);
         const outfitImageArr = [];
         const outfitDesArr = [];
+        // const outfitTags = []
         for (let i = 0; i < res.rows.length; i++) {
           outfitImageArr.push(res.rows[i]['aws_image']);
           outfitDesArr.push(res.rows[i]['description']);
+          //outfitTags.push(res.rows[i]['Casual', 'SmartCasual', 'BusinessAttire', 'Formal', 'Athleisure'])
         }
         setOutfitImage(outfitImageArr);
         setOutfitDes(outfitDesArr);
       });
   }, []);
-  // add image and description to outfitdata
+  // add image and description to outfitdata, add tags to outfit
 
   console.log('outfitImage:', outfitImage);
   console.log('outfitDes:', outfitDes);
@@ -37,7 +39,7 @@ const AllOutfits = ({ SSID }) => {
   const array = [];
   for (let i = 0; i < outfitImage.length; i++) {
     array.push(
-      <Outfit outfitImage={outfitImage[i]} outfitDes={outfitDes[i]} />
+      <Outfit outfitImage={outfitImage[i]} outfitDes={outfitDes[i]} /*, tags=outfitTags[i] */ />
     );
   }
 
