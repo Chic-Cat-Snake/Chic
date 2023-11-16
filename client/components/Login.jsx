@@ -42,7 +42,7 @@ const Login = ({ setSSID }) => {
             <div className='logo'>
                 <img className='logoPic' src="https://drive.google.com/uc?export=view&id=1v0179NE5pCP1n3ZWIv51ij3ww4cEeBpV" width="200">
                 </img>
-                <text id='chic'>HIC</text>
+                <text className='chicText'>HIC</text>
             </div>
             <input id='loginUsername' className='input' placeholder='USERNAME'></input>
             <input id='loginPassword' className='input' placeholder='PASSWORD'></input>

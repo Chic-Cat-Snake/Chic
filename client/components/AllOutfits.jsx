@@ -158,7 +158,9 @@ const AllOutfits = ({ SSID }) => {
         <button className='outfitsButton'  type="submit">GET RESULTS</button>
       </form>
       <div id="outfitBox">{allOutfits ? outfitsArray:randomOutift}</div>
-      <button onClick={getRandomOutift}>DONT KNOW WHAT TO WEAR CLICK HERE</button>
+      <div className='randomOutfitButton'>
+      <button className='outfitsButton' onClick={getRandomOutift}>DONT KNOW WHAT TO WEAR? <br/>  CLICK HERE</button>
+      </div>
     </div>
   );
 };

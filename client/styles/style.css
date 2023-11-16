@@ -100,9 +100,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
-  box-shadow: 0px 0px 5px 5px #DCDCDC
+  box-shadow: 0px 0px 5px 5px #DCDCDC;
+  max-width: 325px;
+  max-height: 380px;
+  min-width: 325px;
+  min-height: 380px;
+}
+
+.outfitsImg {
+  max-width: 300px;
+  max-height: 350px;
+  border-radius: 10px;
 }
 
 .header{
@@ -168,9 +178,9 @@ body {
 
 .outfitsButton {
   margin: 10px;
-  height: 55px;
-  width: 180px;
-  padding: 10px;
+  /* height: 55px; */
+  /* width: 180px; */
+  padding: 15px;
   font-size: 20px;
   letter-spacing: 2px;
   cursor: pointer; 
@@ -185,6 +195,11 @@ body {
   color: white;
   background: grey;
   border: 2px solid grey;
+}
+
+.randomOutfitButton {
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .yourUpload {

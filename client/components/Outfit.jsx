@@ -12,9 +12,8 @@ const Outfit = (props) => {
 
   return (
     <div id='outfit'>
-      <div className='imgContainer'>
-        <img src={'outfits/uploads/' + aws_image} style={{ maxWidth: '300px' }} alt="outfitImage prop" />
-      </div>
+      <img className='outfitsImg' src={'outfits/uploads/' + aws_image}
+        alt="outfitImage prop" />
       <h3>{description}</h3>
       {categoryNames.length > 0 && (
         <div>
